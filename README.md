@@ -1,31 +1,28 @@
 # Specs:
-1. Will recognize individual words.
-* input: hello 
-* output: "hello"
-2. Will recognize multiple words.
-* input: hello all
-* output: ["hello", "all"]
-3. Will recognize words that begin with a consonant.
-* input: hello all
-* output: "hello"
-4. Will recognize words that begin with a vowel.
-* input: hello all
-* output: "all"
-5. Will move the first consonant of words that begin with a consant to the end of the word.
-* input: hello
-* output: "elloh"
-6. Will add -ay to the end of a word that begins with a consant after moving the consonant.
-* input: hello
-* output: "ellohay"
-7. Will add -way to the end of words that begin with a vowel.
-* input: aloha
-* output: "alohaway"
-8. Will count "qu" at the beginning of a word as a consonant and move it appropriately.
-* input: question
-* output: "estionquay"
-9. Will respect capitalization of words
-* input: Hello
-* output: "Ellohay"
-10. Will maintain punctuation.
-* input: Hello, everyone!
-* output: Ellohay, everyoneway!
+- The program returns a number.
+  - Input: "2"
+  - Output: "2"
+- The program returns a range of numbers starting with 0 to the inputted number.
+  - Input: "2"
+  - Output: "0, 1, 2"
+- The program replaces all numbers that contain a "1" with "Beep".
+  - Input: "11"
+  - Output: "Beep"
+- The program replaces all numbers that contain a "2" with "Boop".
+  - Input: "20"
+  - Output: "Boop"
+- The program replaces all numbers that contain a "3" with "Won't you be my neighbor?"
+  - Input: "34"
+  - Output: "Won't you be my neighbor?"
+- The program prioritizes the digit "3" over "1" and "2".
+  - Input: "312"
+  - Output: "Won't you be my neighbor?"
+- The program prioritizes the digit "2" over "1".
+  - Input: "21"
+  - Output: "boop"
+- The program maintains the above logic in the outputted range.
+  - Input: "5"
+  - Output: "0, "Beep", "Boop", "Won't you be my neighbor?", 4, 5"
+- The program rejects input other than numerical values.
+  - Input: "hello mister robogers"
+  - Output: "DOES NOT COMPUTE, NEIGHBOR UNIT"
