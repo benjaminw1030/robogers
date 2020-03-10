@@ -6,11 +6,13 @@ var robogers = function(number) {
   };
   var robogersArrayMod = robogersArray.map(function(number) {
     var digits = number.toString().split("");
-    if (digits.includes("1")) {
+    if (digits.includes("2")) {
+      return "Boop";
+    } else if (digits.includes("1")) {
       return "Beep";
     } else {
       return number;
-    };
+    }
   });
   return robogersArrayMod.join(", ");
 };
