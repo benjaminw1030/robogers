@@ -1,29 +1,33 @@
 // business logic
 var robogers = function(number) {
-  var robogersArray = [];
-  for (var i = 0; i <= number; i++) {
-    robogersArray.push(i);
+  if (isNaN(number)) {
+    return "DOES NOT COMPUTE, NEIGHBOR UNIT";
+  } else {
+    var robogersArray = [];
+    for (var i = 0; i <= number; i++) {
+      robogersArray.push(i);
+    };
+    var robogersArrayMod = robogersArray.map(function(num) {
+      var digits = num.toString().split("");
+      if (digits.includes("3")) {
+        return "\"Won't you be my neighbor?\"";
+      } else if (digits.includes("2")) {
+        return "\"Boop\"";
+      } else if (digits.includes ("1")) {
+        return "\"Beep\"";
+      } else {
+        return num;
+      };
+    });
+    return robogersArrayMod.join(", ");
   };
-  var robogersArrayMod = robogersArray.map(function(number) {
-    var digits = number.toString().split("");
-    if (digits.includes("3")) {
-      return "\"Won't you be my neighbor?\"";
-    } else if (digits.includes("2")) {
-      return "\"Boop\"";
-    } else if (digits.includes ("1")) {
-      return "\"Beep\"";
-    } else {
-      return number;
-    }
-  });
-  return robogersArrayMod.join(", ");
 };
 
 // user interface logic
 $(document).ready(function() {
   $("form#mr-robogers").submit(function(event) {
     event.preventDefault();
-    var number = $("input#input").val();
+    var number = parseInt($("input#input").val());
     var robogerOutput = robogers(number);
     $("#output").text(robogerOutput);
     $("#output").show();
