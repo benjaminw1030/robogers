@@ -1,6 +1,10 @@
 // business logic
 var robogers = function(number) {
-  return number;
+  var robogersArray = [];
+  for (var i = 0; i <= number; i++) {
+    robogersArray.push(i);
+  }
+  return robogersArray.join(", ");
 }
 
 // user interface logic
