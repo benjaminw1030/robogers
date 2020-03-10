@@ -1,6 +1,6 @@
 // business logic
 var robogers = function(number) {
-  
+  return number;
 }
 
 // user interface logic
