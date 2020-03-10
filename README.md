@@ -5,15 +5,15 @@
 - The program returns a range of numbers starting with 0 to the inputted number.
   - Input: "2"
   - Output: "0, 1, 2"
-- The program replaces all numbers that contain a "1" with "Beep".
-  - Input: "11"
-  - Output: "Beep"
-- The program replaces all numbers that contain a "2" with "Boop".
-  - Input: "20"
-  - Output: "Boop"
 - The program replaces all numbers that contain a "3" with "Won't you be my neighbor?"
   - Input: "34"
   - Output: "Won't you be my neighbor?"
+- The program replaces all numbers that contain a "2" with "Boop".
+  - Input: "20"
+  - Output: "Boop"
+- The program replaces all numbers that contain a "1" with "Beep".
+  - Input: "11"
+  - Output: "Beep"
 - The program prioritizes the digit "3" over "1" and "2".
   - Input: "312"
   - Output: "Won't you be my neighbor?"
