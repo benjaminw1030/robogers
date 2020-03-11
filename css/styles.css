@@ -1,8 +1,20 @@
 body {
   text-align: center;
+  background-color: black;
+  color: lightgray;
+}
+
+#robogers {
+  display: none;
 }
 
 #output {
-  display: none;
+  text-align: left;
+}
+
+#robogersImg {
+  float: left;
+  height: 600px;
+  margin-right: 10px;
 }
 

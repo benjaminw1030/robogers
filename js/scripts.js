@@ -30,6 +30,6 @@ $(document).ready(function() {
     var number = parseInt($("input#input").val());
     var robogerOutput = robogers(number);
     $("#output").text(robogerOutput);
-    $("#output").fadeIn();
+    $("#robogers").fadeIn();
   });
 });
